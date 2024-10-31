@@ -1,0 +1,410 @@
+body {
+    overflow-x: hidden;
+}
+
+
+#kreditrechner {
+    font-family: OpenSans, sans-serif;
+    max-width: 1150px;
+    width: 100%;
+    box-sizing: content-box;
+    word-wrap: normal;
+    font-weight: 300;
+}
+
+#kreditrechner .opt-header {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+#kreditrechner .opt-header__background {
+    position: absolute;
+    background: #216197;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+#kreditrechner .opt-header__text {
+    color: white;
+    font-size: 1.8rem;
+    margin-top: auto;
+    font-family: Muli, sans-serif;
+    font-weight: 700;
+}
+
+#kreditrechner .opt-header__switch-wrapper {
+    width: 100%;
+    display: flex;
+    margin-top: auto;
+}
+
+#kreditrechner .opt-header__switch {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #216197;
+    background: #f0f4f9;
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-color: #f0f4f9;
+    border-style: solid;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 31px;
+}
+
+#kreditrechner .opt-header__switch--selected {
+    background: white;
+}
+
+#kreditrechner .opt-body {
+    padding: 50px 9.5% 40px;
+    position: relative;
+    background: white;
+}
+
+#kreditrechner .opt-body__background {
+    position: absolute;
+    background: #f0f4f9;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 -50vw;
+    z-index: -1;
+}
+
+#kreditrechner .opt-body__heading {
+    color: #216197;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+
+#kreditrechner .opt-body__slider-text-above-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#kreditrechner .opt-body__slider-input-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+#kreditrechner .opt-body__slider-wrapper {
+    width: 60%
+}
+
+#kreditrechner .opt-body__input-wrapper {
+    width: 30%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#kreditrechner .opt-body__slider-text-above-wrapper, #kreditrechner .opt-body__slider-text-below-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#kreditrechner .opt-body__slider-text-below-wrapper {
+    margin-top: -5px;
+}
+
+#kreditrechner .opt-body__slider-text-below, #kreditrechner .opt-body__slider-text-above {
+    font-size: 15px;
+}
+
+#kreditrechner input::-webkit-outer-spin-button, #kreditrechner input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#kreditrechner input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#kreditrechner input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    padding-top: 15px;
+    margin-bottom: 0;
+}
+
+#kreditrechner input[type="range"]::-webkit-slider-runnable-track {
+    height: 7px;
+    -webkit-appearance: none;
+    background: #d4d4d4;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+
+#kreditrechner input[type="range"]::-webkit-slider-thumb {
+    margin-top: -10px;
+    -webkit-appearance: none;
+    background-color: #216197;
+    height: 26px;
+    width: 26px;
+    border-radius: 100%;
+    border: 3px solid white;
+    cursor: ew-resize;
+}
+
+#kreditrechner input[type="range"]:focus {
+    outline: 0;
+}
+
+/** FF*/
+#kreditrechner input[type="range"]::-moz-range-progress {
+    background-color: #216197;
+    height: 7px;
+    border-radius: 5px;
+}
+
+#kreditrechner input[type="range"]::-moz-range-track {
+    background-color: #d4d4d4;
+    height: 7px;
+    border-radius: 5px;
+}
+
+#kreditrechner input[type="range"]::-moz-range-thumb {
+    background-color: #216197;
+    height: 18px;
+    width: 18px;
+    border-radius: 100%;
+    border: 3px solid white;
+    cursor: ew-resize;
+}
+
+#kreditrechner input[type="range"]::-moz-focus-outer {
+    border: 0;
+}
+
+/* IE*/
+#kreditrechner input[type="range"]::-ms-fill-lower {
+    background-color: #216197;
+}
+
+#kreditrechner input[type="range"]::-ms-fill-upper {
+    background-color: #d4d4d4;
+}
+
+#kreditrechner .opt-body__input {
+    -webkit-appearance: none;
+    -webkit-text-fill-color: currentColor;
+    opacity: 1;
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    background: rgb(251, 251, 251) none repeat scroll 0% 0%;
+    border: 0px none;
+    box-shadow: rgb(205, 205, 205) 0px 0px 5px 0px inset;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+#kreditrechner .opt-body__slider-input-wrapper .opt-body__input {
+    margin-bottom: 10px;
+}
+
+#kreditrechner .opt-body__input-label {
+    position: absolute;
+    right: 7.5%;
+    font-size: 14px;
+}
+
+#kreditrechner .opt-body__slider-input-wrapper .opt-body__input-label {
+    padding-bottom: 10px;
+}
+
+#kreditrechner .opt-body__monthly-rate-text {
+    text-align: center;
+    color: #216197;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#kreditrechner .opt-body__monthly-rate-input-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#kreditrechner .opt-body__monthly-rate-input-wrapper .opt-body__input {
+    background: #f0f4f9;
+    height: 42px;
+    color: #216197;
+    font-size: 1.5rem;
+}
+
+#kreditrechner .opt-body__monthly-rate-input-wrapper .opt-body__input-label {
+    color: #216197;
+}
+
+#kreditrechner .opt-inquiry-button-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+    background: #fdefe0;
+    margin-top: 5px;
+}
+
+#kreditrechner .opt-inquiry-button {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    background: rgb(239, 125, 0) none repeat scroll 0% 0%;
+    color: white;
+    border: 0px none;
+    border-radius: 2px;
+    align-self: center;
+    opacity: 1;
+    transition: opacity 0.5s ease 0s;
+    padding: 8px 40px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#kreditrechner .opt-calc-example-wrapper {
+    background: #f2f2f2;
+    margin-top: 5px;
+    text-align: center;
+}
+#kreditrechner .opt-calc-example-heading {
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 15px 0;
+}
+
+#kreditrechner .opt-calc-example-heading:after {
+    content: '';
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    border-style: solid;
+    border-width: 0 0 1px 1px;
+    transform: rotate(-45deg);
+    margin-left: 10px;
+    margin-bottom: 2px;
+    transition: transform 0.2s;
+}
+
+#kreditrechner .opt-calc-example-content {
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    border-color: rgb(129,129,129);
+    font-size: 0.75rem;
+    text-align: left;
+    padding: 40px 9.5%;
+    line-height: 1.8;
+    display: none;
+}
+
+#kreditrechner .opt-calc-example-wrapper--show .opt-calc-example-content {
+    display: block;
+}
+
+#kreditrechner .opt-calc-example-wrapper--show .opt-calc-example-heading:after {
+    transform: rotate(-225deg);
+    margin-bottom: -3px;
+}
+
+@media screen and (max-width: 767px) {
+    #kreditrechner .opt-body__monthly-rate-input-wrapper .opt-body__input-wrapper {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #kreditrechner .opt-body__monthly-rate-input-wrapper .opt-body__input-wrapper {
+        width: 50%;
+    }
+    #kreditrechner .opt-body__input-wrapper {
+        width: 50%;
+    }
+    #kreditrechner input[type="range"] {
+        display: none;
+    }
+    #kreditrechner .opt-body__slider-text-below-wrapper {
+        display: none;
+    }
+    #kreditrechner .opt-body__slider-text-above:last-child {
+        display: none;
+    }
+    #kreditrechner .opt-body__input {
+        height: 42px;
+        font-size: 1.4rem;
+    }
+    #kreditrechner .opt-body__slider-text-above {
+        font-size: 1rem;
+    }
+    #kreditrechner .opt-body__monthly-rate-text {
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    #kreditrechner .opt-body__slider-input-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #kreditrechner .opt-body__slider-wrapper {
+        width: 80%;
+    }
+    #kreditrechner .opt-body__input-wrapper {
+        width: 80%;
+    }
+    #kreditrechner .opt-body__monthly-rate-input-wrapper .opt-body__input-wrapper {
+        width: 80%;
+    }
+    #kreditrechner .opt-body__monthly-rate-text {
+        font-size: 1.5rem;
+        text-align: left;
+        margin-bottom: 25px;
+        padding-top: 15px;
+    }
+    #kreditrechner .opt-body__slider-text-above {
+        margin-bottom: 10px;
+    }
+    #kreditrechner .opt-body__heading {
+        padding-bottom: 25px;
+    }
+    #kreditrechner .opt-header__text {
+        font-size: 1.6rem;
+    }
+    #kreditrechner .opt-body {
+        padding: 30px 9.5%;
+    }
+    #kreditrechner .opt-inquiry-button {
+        padding: 8px 10%;
+    }
+}
+@media screen and (max-width: 380px) {
+    #kreditrechner .opt-header__switch {
+        padding: 31px 15px;
+        font-size: 0.9rem;
+    }
+    #kreditrechner .opt-inquiry-button {
+        padding: 8px 5%;
+    }
+}

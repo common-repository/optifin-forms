@@ -1,0 +1,463 @@
+body {
+    overflow-x: hidden;
+}
+
+
+#kaufenodermietenrechner {
+    font-family: OpenSans, sans-serif;
+    max-width: 1150px;
+    width: 100%;
+    box-sizing: content-box;
+    word-wrap: normal;
+}
+
+#kaufenodermietenrechner .opt-header {
+    position: relative;
+    width: 100%;
+    height: 115px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+#kaufenodermietenrechner .opt-header__background {
+    position: absolute;
+    background: #216197;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+#kaufenodermietenrechner .opt-header__text {
+    color: white;
+    font-size: 1.8rem;
+    font-family: Muli, sans-serif;
+    font-weight: 700;
+}
+
+#kaufenodermietenrechner .opt-body {
+    padding: 0;
+    position: relative;
+    background: white;
+}
+
+#kaufenodermietenrechner .opt-body__background {
+    position: absolute;
+    background: #f0f4f9;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 -50vw;
+    z-index: -1;
+}
+
+#kaufenodermietenrechner .opt-body__section-heading {
+    color: #216197;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+
+#kaufenodermietenrechner .opt-body__section-one {
+    background: rgb(233,239,245);
+    padding: 50px 9.5% 10px;
+}
+
+#kaufenodermietenrechner .opt-body__row-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+#kaufenodermietenrechner .opt-body__slider-wrapper {
+    width: 46%
+}
+
+#kaufenodermietenrechner .opt-body__slider-text-above-wrapper, #kaufenodermietenrechner .opt-body__slider-text-below-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#kaufenodermietenrechner .opt-body__slider-text-below-wrapper {
+    margin-top: -5px;
+}
+
+#kaufenodermietenrechner .opt-body__slider-text-below, #kaufenodermietenrechner .opt-body__slider-text-above {
+    font-size: 15px;
+}
+
+#kaufenodermietenrechner input::-webkit-outer-spin-button, #kaufenodermietenrechner input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#kaufenodermietenrechner input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#kaufenodermietenrechner input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    padding-top: 15px;
+    margin-bottom: 0;
+    background: transparent;
+}
+
+#kaufenodermietenrechner input[type="range"]::-webkit-slider-runnable-track {
+    height: 7px;
+    -webkit-appearance: none;
+    background: #d4d4d4;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+
+#kaufenodermietenrechner input[type="range"]::-webkit-slider-thumb {
+    margin-top: -10px;
+    -webkit-appearance: none;
+    background-color: #216197;
+    height: 26px;
+    width: 26px;
+    border-radius: 100%;
+    border: 3px solid white;
+    cursor: ew-resize;
+}
+
+#kaufenodermietenrechner input[type="range"]:focus {
+    outline: 0;
+}
+
+/** FF*/
+#kaufenodermietenrechner input[type="range"]::-moz-range-progress {
+    background-color: #216197;
+    height: 7px;
+    border-radius: 5px;
+}
+
+#kaufenodermietenrechner input[type="range"]::-moz-range-track {
+    background-color: #d4d4d4;
+    height: 7px;
+    border-radius: 5px;
+}
+
+#kaufenodermietenrechner input[type="range"]::-moz-range-thumb {
+    background-color: #216197;
+    height: 18px;
+    width: 18px;
+    border-radius: 100%;
+    border: 3px solid white;
+    cursor: ew-resize;
+}
+
+#kaufenodermietenrechner input[type="range"]::-moz-focus-outer {
+    border: 0;
+}
+
+/* IE*/
+#kaufenodermietenrechner input[type="range"]::-ms-fill-lower {
+    background-color: #216197;
+}
+
+#kaufenodermietenrechner input[type="range"]::-ms-fill-upper {
+    background-color: #d4d4d4;
+}
+
+#kaufenodermietenrechner .opt-body__input {
+    -webkit-appearance: none;
+    -webkit-text-fill-color: currentColor;
+    opacity: 1;
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    background: rgb(251, 251, 251) none repeat scroll 0% 0%;
+    border: 0px none;
+    box-shadow: rgb(205, 205, 205) 0px 0px 5px inset;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+#kaufenodermietenrechner .opt-body__input-wrapper {
+    width: 60%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#kaufenodermietenrechner .opt-body__slider-input-wrapper .opt-body__input {
+    margin-bottom: 10px;
+}
+
+#kaufenodermietenrechner .opt-body__input-label {
+    position: absolute;
+    right: 7.5%;
+    font-size: 14px;
+}
+
+#kaufenodermietenrechner .opt-body__slider-input-wrapper .opt-body__input-label {
+    margin-bottom: 10px;
+}
+
+#kaufenodermietenrechner .opt-body__section-two {
+    background: #FFF;
+    padding: 25px 9.5%;
+}
+#kaufenodermietenrechner .opt-body__section-two .opt-body__slider-text-above {
+    width: 35%;
+}
+#kaufenodermietenrechner .opt-body__section-two .opt-body__row-wrapper:last-child .opt-body__slider-text-above {
+    width: 40%;
+}
+
+#kaufenodermietenrechner .opt-body__section-three {
+    background: rgb(190,207,224);
+    padding: 40px 12.4% 30px;
+}
+#kaufenodermietenrechner .opt-body__section-three .opt-body__row-wrapper {
+    margin-bottom: 20px;
+}
+#kaufenodermietenrechner .opt-body__section-three .opt-body__row-wrapper:last-child {
+    margin-bottom: 0;
+}
+#kaufenodermietenrechner .opt-body__text, #kaufenodermietenrechner .opt-body__number, #kaufenodermietenrechner .opt-body__label {
+    color: #216197;
+    font-weight: 700;
+}
+#kaufenodermietenrechner .opt-body__text {
+    font-size: 1.25rem;
+}
+#kaufenodermietenrechner .opt-body__number {
+    font-size: 1.6rem;
+    line-height: 1;
+}
+#kaufenodermietenrechner .opt-body__label {
+    margin-left: 30px;
+    line-height: 1.2;
+}
+#kaufenodermietenrechner .opt-body__number-label-wrapper {
+    display: flex;
+    align-items: flex-end;
+}
+#kaufenodermietenrechner .opt-body__text-wrapper {
+    width: 60%;
+    text-align: right;
+}
+#kaufenodermietenrechner .opt-body__section-four {
+    background: #216197;
+    padding: 26.75px 12.4%;
+    margin-top: 5px;
+}
+#kaufenodermietenrechner .opt-body__section-four .opt-body__text, #kaufenodermietenrechner .opt-body__section-four .opt-body__number, #kaufenodermietenrechner .opt-body__section-four .opt-body__label {
+    color: #FFF
+}
+#kaufenodermietenrechner .opt-body__section-four .opt-body__text {
+    font-size: 1.6rem;
+}
+#kaufenodermietenrechner .opt-body__section-four .opt-body__row-wrapper {
+    margin-bottom: 0;
+}
+
+#kaufenodermietenrechner .opt-inquiry-button-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+    background: #fdefe0;
+    margin-top: 5px;
+}
+
+#kaufenodermietenrechner .opt-inquiry-button {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    background: rgb(239, 125, 0) none repeat scroll 0% 0%;
+    color: white;
+    border: 0px none;
+    border-radius: 2px;
+    align-self: center;
+    opacity: 1;
+    transition: opacity 0.5s ease 0s;
+    padding: 8px 40px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#kaufenodermietenrechner .opt-calc-example-wrapper {
+    background: #f2f2f2;
+    margin-top: 5px;
+    text-align: center;
+}
+#kaufenodermietenrechner .opt-calc-example-heading {
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 15px 0;
+}
+
+#kaufenodermietenrechner .opt-calc-example-heading:after {
+    content: '';
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    border-style: solid;
+    border-width: 0 0 1px 1px;
+    transform: rotate(-45deg);
+    margin-left: 10px;
+    margin-bottom: 2px;
+    transition: transform 0.2s;
+}
+
+#kaufenodermietenrechner .opt-calc-example-content {
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    border-color: rgb(129,129,129);
+    font-size: 0.75rem;
+    text-align: left;
+    padding: 40px 9.5%;
+    line-height: 1.8;
+    display: none;
+}
+
+#kaufenodermietenrechner .opt-calc-example-wrapper--show .opt-calc-example-content {
+    display: block;
+}
+
+#kaufenodermietenrechner .opt-calc-example-wrapper--show .opt-calc-example-heading:after {
+    transform: rotate(-225deg);
+    margin-bottom: -3px;
+}
+
+
+@media screen and (max-width: 767px) {
+    #kaufenodermietenrechner .opt-body__slider-wrapper {
+        width: 100%;
+    }
+    #kaufenodermietenrechner .opt-body__row-wrapper {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+    #kaufenodermietenrechner .opt-body__slider-wrapper {
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 640px) {
+    #kaufenodermietenrechner .opt-header__text {
+        font-size: 1.7rem;
+    }
+    #kaufenodermietenrechner .opt-body__slider-text-below-wrapper {
+        display: none;
+    }
+    #kaufenodermietenrechner input[type="range"] {
+        display: none;
+    }
+    #kaufenodermietenrechner .opt-body__input {
+        height: 42px;
+        font-size: 1.4rem;
+    }
+    #kaufenodermietenrechner .opt-body__slider-text-above {
+        font-size: 1rem;
+    }
+    #kaufenodermietenrechner .opt-body__input-wrapper {
+        width: 50%;
+    }
+    #kaufenodermietenrechner .opt-body__text-wrapper {
+        width: 53%;
+    }
+    #kaufenodermietenrechner .opt-body__section-three {
+        padding: 40px 10% 30px 0;
+    }
+    #kaufenodermietenrechner .opt-body__section-four {
+        padding: 26.75px 10% 26.75px 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    #kaufenodermietenrechner .opt-header__text {
+        font-size: 1.5rem;
+    }
+    #kaufenodermietenrechner .opt-body__slider-text-above {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    #kaufenodermietenrechner .opt-body__input-wrapper {
+        width: 80%;
+    }
+    #kaufenodermietenrechner .opt-body__slider-text-above-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #kaufenodermietenrechner .opt-body__section-two .opt-body__slider-text-above {
+        width: 80%;
+    }
+    #kaufenodermietenrechner .opt-body__section-two .opt-body__row-wrapper:last-child .opt-body__slider-text-above {
+        width: 80%;
+    }
+    #kaufenodermietenrechner .opt-body__section-three .opt-body__text {
+        font-size: 1.125rem;
+    }
+    #kaufenodermietenrechner .opt-body__section-four .opt-body__text {
+        font-size: 1.275rem;
+    }
+    #kaufenodermietenrechner .opt-body__label {
+        margin-left: 15px;
+    }
+    #kaufenodermietenrechner .opt-body__section-one {
+        padding: 30px 9.5% 10px;
+    }
+    #kaufenodermietenrechner .opt-body__section-two {
+        padding: 30px 9.5% 20px;
+    }
+    #kaufenodermietenrechner .opt-body__section-heading {
+        padding-bottom: 25px;
+    }
+    #kaufenodermietenrechner .opt-body__slider-wrapper {
+        margin-bottom: 30px;
+    }
+    #kaufenodermietenrechner .opt-inquiry-button-wrapper {
+        padding: 25px 0;
+    }
+}
+@media screen and (max-width: 420px) {
+    #kaufenodermietenrechner .opt-header__text {
+        font-size: 1.35rem;
+    }
+    #kaufenodermietenrechner .opt-inquiry-button {
+        padding: 8px 10%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #kaufenodermietenrechner .opt-header__text {
+        font-size: 1.1rem;
+    }
+    #kaufenodermietenrechner .opt-body__section-three .opt-body__text {
+        font-size: 1rem;
+    }
+    #kaufenodermietenrechner .opt-body__section-four .opt-body__text {
+        font-size: 1.1rem;
+    }
+    #kaufenodermietenrechner .opt-body__section-three {
+        padding: 40px 5% 30px 0;
+    }
+    #kaufenodermietenrechner .opt-body__section-four {
+        padding: 26.75px 5% 26.75px 0;
+    }
+    #kaufenodermietenrechner .opt-body__text-wrapper {
+        width: 50%;
+    }
+    #kaufenodermietenrechner .opt-inquiry-button {
+        padding: 8px 5%;
+    }
+}
